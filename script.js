@@ -1,28 +1,58 @@
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const letters=["A","B","C","D","E","F","G","H","I","J"]
 
-const newNumbers = [];
-const divv = document.querySelector("div");
-const getirBtn = document.querySelector(".getir");
-const clearBtn = document.querySelector(".clear");
+/* card animation */
+const card = document.querySelector(".card");
+const cardContainer = document.querySelector(".card-container");
 
-getirBtn.addEventListener("click", (e) => {
-  for (let i = 0; i < 4; i++) {
-    e.preventDefault();
-    let random = Math.floor(Math.random() * letters.length);
-    let x = letters[random];
-    newNumbers[i] = x;
-    newNumbers.push(x);
+cardContainer.addEventListener("mousemove", (e) => {
+  let xAxis = (window.innerWidth / 4 - e.pageX) / 22;
+  let yAxis = (window.innerHeight / 4 - e.pageY) / 40;
+  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+cardContainer.addEventListener("mouseleave", (e) => {
+  card.style.transition = "all 0.6s ease";
+  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+});
+
+/* tabs */
+
+const tabs = document.querySelector(".tab-container");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabs.onclick = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    contents.forEach((content) => {
+      content.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
   }
+};
 
- console.log(newNumbers);
+/* animation on viewport */
 
-  divv.innerHTML = newNumbers.join("");
-  newNumbers.splice(0, newNumbers.length);
-  //or newNumbers.length=0  (to empty the array)
- 
+const element = document.querySelector(".nav-buildings");
+const observer = new IntersectionObserver((entries) => {
+  element.classList.toggle("buildings-anima", entries[0].isIntersecting);
 });
 
-clearBtn.addEventListener("click", (e) => {
-  divv.innerHTML = "";
-});
+observer.observe(element);
+
+
+/* dropdown menu */
+const crossBtn=document.querySelector(".menu .cross")
+const navLinks=document.querySelector(".menu .nav-links")
+
+crossBtn.addEventListener("click",()=>{
+
+navLinks.classList.toggle("navHeight")
+console.log("yyyyyyyy")
+
+})

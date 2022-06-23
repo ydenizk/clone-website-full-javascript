@@ -4,35 +4,271 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>BLAUWE</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/bf63e974af.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <nav class="menu">
+        <div class="logo">
+          <h1 class="logo-svg">BLAUWE</h1>
+          <button class="cross">X</button>
+        </div>
 
-  
-  <form action="">
+        <ul class="nav-links">
+          <li>
+            <a href="#">Customers</a>
+            <ul class="dropdown">
+              <li><a href="#">General Contractors</a></li>
+              <li><a href="#">Project Developers</a></li>
+              <li><a href="#">Architects</a></li>
+              <li><a href="#">Subcontractors</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Features</a>
 
+            <ul class="dropdown">
+              <li><a href="#">Contractors</a></li>
+              <li><a href="#">Subcontractors</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+            <ul class="dropdown">
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">Magazine</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Company</a>
+            <ul class="dropdown">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
 
-<button class="getir" >Getir</button>
-<button class="clear">Clear</button>
+        <ul class="contact">
+          <li><button class="sign-in">Sign In</button></li>
+          <li><button class="demo">Book a demo</button></li>
+          <li>
+            <a href="#">English</a>
+            <ul class="dropdown">
+              <li><a href="#">Deutsch</a></li>
+              <li><a href="#">Türkçe</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-<div></div>
+      <div class="nav-down">
+        <p class="nav-p">
+          The pioneer interface for production and planning management in the
+          manufacturing industry
+        </p>
+        <p class="nav-p-2">
+          Enlarge your entire planning cycle with the Blauwe interaction and
+          benefit from one side consultation and solution for all your planning
+          needs.
+        </p>
+        <button class="sign-up"><span>&#8677;</span> Sign up free</button>
+      </div>
 
+      <div class="pics">
+        <div class="banner">
+          <p class="banner-p1">TRANSFORM YOUR</p>
+          <p class="banner-p2">BUSINESS WITH <span>BLAUWE...</span></p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img-con">
+              <img src="./card-pic.jpg" alt="" />
+            </div>
 
-  </form>
+            <div class="card-details">
+              <p class="p-card">
+                Integrate your tools.Digital teams work better with agile
+                workflows and structured content, ready for any channel.
+              </p>
+              <button class="card-btn">Request a Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- section marquee -->
+    <section class="marq">
+      <marquee class="marq-container" direction="right">
+        <div class="marq-svg-1"></div>
+        <div class="marq-svg-2"></div>
+        <div class="marq-svg-3"></div>
+        <div class="marq-svg-4"></div>
+        <div class="marq-svg-5"></div>
+        <div class="marq-svg-6"></div>
+        <div class="marq-svg-7"></div>
+        <div class="marq-svg-8"></div>
+      </marquee>
+    </section>
 
+    <!-- section explain -->
 
+    <section class="explain">
+      <p class="explain-p-1">Simple yet extremely powerful</p>
+      <p class="explain-p-2">
+        At SimScale, we value your time. That’s why we reinvented the simulation
+        software workflow with the goal of reducing your time-to-result from
+        weeks to minutes.
+      </p>
+    </section>
 
+    <!-- section.info -->
+    <section class="info">
+      <div class="info-container">
+        <div class="nav-buildings"></div>
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <div class="info-details">
+          <h1 class="info-h">Easy Setup</h1>
+          <p class="info-p">
+            Most simulation software tools are complex and difficult to
+            understand. SimScale uses a lean simulation workflow that guides you
+            through the process step-by-step. And with the help of ready-to-use
+            simulation templates, you never have to start from scratch.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-tab -->
+
+    <section class="tab">
+      <div class="tab-container">
+        <div class="btns-con">
+          <button class="tab-button active" data-id="home">Home</button>
+          <button class="tab-button" data-id="about">About</button>
+          <button class="tab-button" data-id="ilet">Contact</button>
+        </div>
+
+        <div class="tab-content">
+          <article class="content active" id="home">
+            <div class="artic-container">
+              <img src="./images/tab-1.jpg" alt="" />
+            </div>
+            <div class="arct-details">
+              <h1 class="arct-h">
+                Karona and flexible ipsum for customer onboarding.
+              </h1>
+              <p class="arct-p">
+                Adipisicing elit. Provident illo aperiam ea sapiente ipsam
+                deserunt omnis totam ipsum, perspiciatis recusandae dolore,
+                commodi quibusdam mollitia architecto molestiae eum officiis
+                cupiditate consectetur.Lorem ipsum dolor sit amet consectetur
+                <a href="#">More...</a>
+              </p>
+            </div>
+          </article>
+          <article class="content" id="about">
+            <div class="artic-container">
+              <img src="./images/tab-2.jpg" alt="" />
+            </div>
+            <div class="arct-details">
+              <h1 class="arct-h">
+                Lorem ipsum doloro luptasquibusdam eligendi odio?.
+              </h1>
+              <p class="arct-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi quos placeat sequi tenetur deleniti atque nobis iusto.
+                Neque repellendus earum, doloribus quaerat cupiditate aliquam
+                illo sint delectus rerum culpa tempora.
+                <a href="#">More...</a>
+              </p>
+            </div>
+          </article>
+          <article class="content" id="ilet">
+            <div class="artic-container">
+              <img src="./images/tab-3.jpg" alt="" />
+            </div>
+            <div class="arct-details">
+              <h1 class="arct-h">
+                Sed molestias nisi obcaecati esse a? Dolor aperiam magnam.
+              </h1>
+              <p class="arct-p">
+                Ipsum accusamus dignissimos amet illum dolor eaque blanditiis
+                sequi. Hic reiciendis corporis ad? Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.Dignissimos dolore assumenda
+                doloremque quam commodi quo, quae molestias!
+                <a href="#">More...</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="foot">
+      <div class="foot-container">
+        <article class="foot-arc">
+          <p class="foot-p" id="foot-logo">BLAUWE</p>
+          <ul class="foot-ul foot-social">
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtıbe</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </article>
+
+        <article class="foot-arc">
+          <p class="foot-p">Customers</p>
+          <ul class="foot-ul">
+            <li><a href="#">General Contractors</a></li>
+            <li><a href="#">Project Developers</a></li>
+            <li><a href="#">Architects</a></li>
+            <li><a href="#">Subcontractors</a></li>
+          </ul>
+        </article>
+        <article class="foot-arc">
+          <p class="foot-p">Features</p>
+          <ul class="foot-ul">
+            <li><a href="#">Contractors</a></li>
+            <li><a href="#">Subcontractors</a></li>
+          </ul>
+        </article>
+        <article class="foot-arc">
+          <p class="foot-p">Resources</p>
+          <ul class="foot-ul">
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Magazine</a></li>
+          </ul>
+        </article>
+        <article class="foot-arc">
+          <p class="foot-p">Company</p>
+          <ul class="foot-ul">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-con">
+        <a href="#">Sign In</a>
+        <a href="#">Privacy</a>
+        <a href="#">Security</a>
+        <a href="#">Preferences</a>
+      </div>
+    </footer>
+
     <script src="./script.js" type="module"></script>
   </body>
 </html>
