@@ -1,12 +1,15 @@
-BLAUWE.com (Responsive website)
+BLAUWE.com ( clone website)
 
-HTML-CSS
+
+
+HTML-CSS>>
 
 Animations,
 3D Animation,
 
 
-JS
+Javascript>>
+
 Responsive Hamburger Menu,
 3D Animation,
 Tab Menu,
