@@ -1,4 +1,3 @@
-
 /* card animation */
 const card = document.querySelector(".card");
 const cardContainer = document.querySelector(".card-container");
@@ -45,14 +44,11 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(element);
 
-
 /* dropdown menu */
-const crossBtn=document.querySelector(".menu .cross")
-const navLinks=document.querySelector(".menu .nav-links")
+const crossBtn = document.querySelector(".menu .cross");
+const navLinks = document.querySelector(".menu .nav-links");
 
-crossBtn.addEventListener("click",()=>{
-
-navLinks.classList.toggle("navHeight")
-console.log("yyyyyyyy")
-
-})
+crossBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("navHeight");
+  console.log("yyyyyyyy");
+});
